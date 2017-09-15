@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,7 +20,47 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJI-lz-15o">
+                                <rect key="frame" x="147" y="268.5" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1kU-DO-LRh"/>
+                                    <constraint firstAttribute="width" constant="80" id="sih-jh-4J6"/>
+                                </constraints>
+                                <state key="normal" title="获取设备ID"/>
+                                <connections>
+                                    <action selector="getCarMessageData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3bZ-Gy-Zig"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Blx-9f-CT5">
+                                <rect key="frame" x="147.5" y="318.5" width="80" height="30"/>
+                                <state key="normal" title="读取PM25"/>
+                                <connections>
+                                    <action selector="getCarMessageData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kN8-W1-lnX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYQ-Sw-ydb">
+                                <rect key="frame" x="147" y="368.5" width="80" height="30"/>
+                                <state key="normal" title="获取通电时间"/>
+                                <connections>
+                                    <action selector="getCarMessageData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yiS-L6-G2m"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TYQ-Sw-ydb" firstAttribute="height" secondItem="HJI-lz-15o" secondAttribute="height" id="Dvl-Y3-Yue"/>
+                            <constraint firstItem="Blx-9f-CT5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KE1-At-jqF"/>
+                            <constraint firstItem="HJI-lz-15o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QfG-PL-aj3"/>
+                            <constraint firstItem="TYQ-Sw-ydb" firstAttribute="top" secondItem="Blx-9f-CT5" secondAttribute="bottom" constant="20" id="RRU-I4-aMd"/>
+                            <constraint firstItem="Blx-9f-CT5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RWo-v4-WlZ"/>
+                            <constraint firstItem="Blx-9f-CT5" firstAttribute="top" secondItem="HJI-lz-15o" secondAttribute="bottom" constant="20" id="TtT-Fe-zm7"/>
+                            <constraint firstItem="Blx-9f-CT5" firstAttribute="height" secondItem="HJI-lz-15o" secondAttribute="height" id="ZiS-Ee-wBm"/>
+                            <constraint firstItem="TYQ-Sw-ydb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f23-x5-roX"/>
+                            <constraint firstItem="Blx-9f-CT5" firstAttribute="width" secondItem="HJI-lz-15o" secondAttribute="width" id="g8G-Xq-iDr"/>
+                            <constraint firstItem="TYQ-Sw-ydb" firstAttribute="width" secondItem="HJI-lz-15o" secondAttribute="width" id="nOG-Xc-tPF"/>
+                            <constraint firstItem="Blx-9f-CT5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qcY-N3-fAp"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

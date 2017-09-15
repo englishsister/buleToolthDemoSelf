@@ -15,6 +15,8 @@
 		E8DF3A0C1F4FBAFB00D4BEB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8DF3A0A1F4FBAFB00D4BEB7 /* LaunchScreen.storyboard */; };
 		E8DF3A171F4FBAFB00D4BEB7 /* buleToolthDemoSelfTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DF3A161F4FBAFB00D4BEB7 /* buleToolthDemoSelfTests.m */; };
 		E8DF3A221F4FBAFB00D4BEB7 /* buleToolthDemoSelfUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DF3A211F4FBAFB00D4BEB7 /* buleToolthDemoSelfUITests.m */; };
+		E8DF3A311F4FBDDD00D4BEB7 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8DF3A301F4FBDDD00D4BEB7 /* CoreBluetooth.framework */; };
+		E8DF3A5A1F4FFC9600D4BEB7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DF3A031F4FBAFB00D4BEB7 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,7 @@
 		E8DF3A1D1F4FBAFB00D4BEB7 /* buleToolthDemoSelfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = buleToolthDemoSelfUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8DF3A211F4FBAFB00D4BEB7 /* buleToolthDemoSelfUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = buleToolthDemoSelfUITests.m; sourceTree = "<group>"; };
 		E8DF3A231F4FBAFB00D4BEB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8DF3A301F4FBDDD00D4BEB7 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8DF3A311F4FBDDD00D4BEB7 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +89,7 @@
 				E8DF3A151F4FBAFB00D4BEB7 /* buleToolthDemoSelfTests */,
 				E8DF3A201F4FBAFB00D4BEB7 /* buleToolthDemoSelfUITests */,
 				E8DF39FA1F4FBAFB00D4BEB7 /* Products */,
+				E8DF3A2F1F4FBDDD00D4BEB7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +143,14 @@
 				E8DF3A231F4FBAFB00D4BEB7 /* Info.plist */,
 			);
 			path = buleToolthDemoSelfUITests;
+			sourceTree = "<group>";
+		};
+		E8DF3A2F1F4FBDDD00D4BEB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8DF3A301F4FBDDD00D4BEB7 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +220,7 @@
 				TargetAttributes = {
 					E8DF39F81F4FBAFB00D4BEB7 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 67SE7754VG;
 						ProvisioningStyle = Automatic;
 					};
 					E8DF3A111F4FBAFB00D4BEB7 = {
@@ -291,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8DF3A5A1F4FFC9600D4BEB7 /* ViewController.m in Sources */,
 				E8DF3A221F4FBAFB00D4BEB7 /* buleToolthDemoSelfUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,9 +441,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 67SE7754VG;
 				INFOPLIST_FILE = buleToolthDemoSelf/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = buleToolthDemoSelf.com.buleToolthDemoSelf;
+				PRODUCT_BUNDLE_IDENTIFIER = WeahterCar.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -437,9 +454,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 67SE7754VG;
 				INFOPLIST_FILE = buleToolthDemoSelf/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = buleToolthDemoSelf.com.buleToolthDemoSelf;
+				PRODUCT_BUNDLE_IDENTIFIER = WeahterCar.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -509,6 +528,7 @@
 				E8DF3A281F4FBAFB00D4BEB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8DF3A291F4FBAFB00D4BEB7 /* Build configuration list for PBXNativeTarget "buleToolthDemoSelfTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +537,7 @@
 				E8DF3A2B1F4FBAFB00D4BEB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8DF3A2C1F4FBAFB00D4BEB7 /* Build configuration list for PBXNativeTarget "buleToolthDemoSelfUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +546,7 @@
 				E8DF3A2E1F4FBAFB00D4BEB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
